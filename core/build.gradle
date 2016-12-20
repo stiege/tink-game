@@ -9,3 +9,8 @@ sourceSets.main.java.srcDirs = [ "src/" ]
 eclipse.project {
     name = appName + "-core"
 }
+
+dependencies {
+    compile 'com.bluecatcode.mockito:mockito-1.10.19-extended:1.1.0'
+    compile 'junit:junit:4.12'
+}

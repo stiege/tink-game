@@ -1,5 +1,6 @@
 package com.alexhodge.tink.client;
 
+import com.alexhodge.tink.FactoryImpl;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
@@ -14,6 +15,6 @@ public class HtmlLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener createApplicationListener () {
-                return new TinkGame();
+                return new TinkGame(new FactoryImpl());
         }
 }
